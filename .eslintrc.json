@@ -1,0 +1,54 @@
+{
+    "env": {
+      "browser": true,
+      "es2021": true
+    },
+    "extends": [
+      "eslint:recommended",
+      "plugin:@typescript-eslint/eslint-recommended",
+      "plugin:@typescript-eslint/recommended",
+      "plugin:react/recommended",
+      "airbnb",
+      "prettier"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+      "ecmaFeatures": {
+        "jsx": true
+      },
+      "ecmaVersion": 2021,
+      "sourceType": "module"
+    },
+    "plugins": ["@typescript-eslint", "react", "prettier"],
+    "rules": {
+      "prettier/prettier": "warn",
+      "react/react-in-jsx-scope": "off",
+      "react/jsx-filename-extension": ["error", { "extensions": [".tsx"] }],
+  
+      // Custom rules "off"
+      "import/no-unresolved": "off",
+      "import/extensions": "off",
+      "arrow-body-style": "off",
+      "react/function-component-definition": "off",
+      "react/jsx-props-no-spreading": "off",
+      "@typescript-eslint/no-explicit-any": "off",
+      "no-unused-expressions": "off",
+      "jsx-a11y/control-has-associated-label": "off",
+      "react/jsx-no-useless-fragment": "off",
+      "no-unused-vars": "off",
+      "import/prefer-default-export": "off",
+      "@typescript-eslint/no-unused-vars": "off",
+      "react/require-default-props": "off",
+  
+      // Custom rules "warn"
+      "react/jsx-curly-brace-presence": "warn",
+      "no-undef": "warn"
+    },
+    "ignorePatterns": [
+      ".next/",
+      "node_modules/",
+      "components/Icons",
+      "components/UI"
+    ]
+  }
+  

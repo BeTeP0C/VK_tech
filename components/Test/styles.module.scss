@@ -1,0 +1,28 @@
+.save_button {
+
+  &:hover {
+    & .icon {
+      fill: green;
+    }
+  }
+}
+
+.delete_button {
+  &:hover {
+    & .icon {
+      fill: red;
+    }
+  }
+}
+
+.edit_button {
+  &:hover {
+    & .icon {
+      fill: blue;
+    }
+  }
+}
+
+.icon {
+  transition: fill 0.3s ease;
+}

@@ -1,0 +1,24 @@
+@mixin container {
+  margin: 0 auto;
+  width: 1330px;
+}
+
+// @mixin font-face($font-family, $url, $weight) {
+//   @font-face {
+//     font-family: "#{$font-family}";
+//     src:
+//     url("../public/fonts/#{$url}.woff2") format("woff2"),
+//     url("../public/fonts/#{$url}.woff") format("woff");
+//     font-weight: #{$weight};
+//     font-display: swap;
+//     font-style: normal;
+//   }
+// }
+
+@mixin heading {
+  font-family: "Syncopate";
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 27.5px;
+  color: #FF9900;
+}
